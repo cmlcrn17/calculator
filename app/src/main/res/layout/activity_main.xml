@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.blogspot.cemilecerenerdem.calculator.MainActivity">
+
+
+    <TextView
+        android:id="@+id/txt_sayilar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:paddingBottom="30dp"
+        android:paddingEnd="30dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingStart="30dp"
+        android:paddingTop="30dp"
+        android:textColor="#1115F2"
+        tools:padding="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_button_round"
+            android:textColor="#1115F2"
+            android:text="1" />
+
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_button_round"
+            android:textColor="#1115F2"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_button_round"
+            android:textColor="#1115F2"
+            android:text="3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_round"
+            android:textColor="#1115F2"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_round"
+            android:textColor="#1115F2"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_round"
+            android:textColor="#1115F2"
+            android:text="6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_round"
+            android:text="7"
+            android:textColor="#1115F2" />
+
+        <Button
+            android:id="@+id/btn_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_round"
+            android:textColor="#1115F2"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_round"
+            android:text="9"
+            android:textColor="#1115F2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btn_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.61"
+            android:background="#FAFAFA"
+            android:text="0"
+            android:textColor="#1115F2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btn_topla"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_round"
+            android:text="+"
+            android:textColor="#1115F2"
+            android:textStyle="bold"
+            android:layout_weight="0.01" />
+
+        <Button
+            android:id="@+id/btn_cikar"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_round"
+            android:text="-"
+            android:textColor="#1115F2"
+            android:textStyle="bold"
+            android:layout_weight="0.02" />
+
+        <Button
+            android:id="@+id/btn_carp"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_round"
+            android:text="*"
+            android:textColor="#1115F2"
+            android:textStyle="bold"
+            android:layout_weight="0.04" />
+
+        <Button
+            android:id="@+id/btn_bol"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_round"
+            android:text="/"
+            android:textColor="#1115F2"
+            android:textStyle="bold"
+            android:layout_weight="0.02" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_hesapla"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:text="Hesapla (=)"
+            android:textColor="#1115F2"
+            android:background="#FFFFFF"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/txt_aciklama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#B2B9BA"
+            android:text="cemilecerenerdem.blogspot.com" />
+    </LinearLayout>
+
+</LinearLayout>
